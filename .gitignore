@@ -1,0 +1,4 @@
+tmp/
+include/
+cppunit/cppunit-*/
+protobuf-v2/protobuf-*/
