@@ -9,5 +9,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 add_definitions(-DUNICODE)
 add_definitions(-D_UNICODE)
 
-add_subdirectory(protobuf-v2)
 add_subdirectory(cppunit)
+add_subdirectory(log4cpp)
+add_subdirectory(protobuf-v2)
+add_subdirectory(tinyxml)

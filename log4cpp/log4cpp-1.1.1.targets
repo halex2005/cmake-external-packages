@@ -1,0 +1,166 @@
+SET (LOG4CPP_HEADERS
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/threading/BoostThreads.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/threading/DummyThreads.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/threading/MSThreads.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/threading/OmniThreads.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/threading/PThreads.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/threading/Threading.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/AbortAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/Appender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/AppendersFactory.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/AppenderSkeleton.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/BasicConfigurator.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/BasicLayout.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/BufferingAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/Category.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/CategoryStream.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/config-openvms.h"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/config-win32-stlport-boost.h"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/config-win32.h"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/Configurator.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/Export.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/FactoryParams.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/FileAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/Filter.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/FixedContextCategory.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/HierarchyMaintainer.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/IdsaAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/Layout.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/LayoutAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/LayoutsFactory.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/LevelEvaluator.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/LoggingEvent.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/Manipulator.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/NDC.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/NTEventLogAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/OstreamAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/PassThroughLayout.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/PatternLayout.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/Portability.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/Priority.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/PropertyConfigurator.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/RemoteSyslogAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/RollingFileAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/SimpleConfigurator.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/SimpleLayout.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/SmtpAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/StringQueueAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/SyslogAppender.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/TimeStamp.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/TriggeringEventEvaluator.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/TriggeringEventEvaluatorFactory.hh"
+	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/Win32DebugAppender.hh" 
+)
+
+SET (LOG4CPP_SOURCES
+	"${LOG4CPP_SOURCE_PATH}/src/AbortAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/Appender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/AppendersFactory.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/AppenderSkeleton.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/BasicConfigurator.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/BasicLayout.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/BufferingAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/Category.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/CategoryStream.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/Configurator.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/DummyThreads.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/FactoryParams.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/FileAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/Filter.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/FixedContextCategory.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/HierarchyMaintainer.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/IdsaAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/LayoutAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/LayoutsFactory.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/LevelEvaluator.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/Localtime.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/Localtime.hh"
+	"${LOG4CPP_SOURCE_PATH}/src/LoggingEvent.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/Manipulator.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/MSThreads.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/NDC.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/NTEventLogAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/OmniThreads.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/OstreamAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/PassThroughLayout.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/PatternLayout.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/PortabilityImpl.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/PortabilityImpl.hh"
+	"${LOG4CPP_SOURCE_PATH}/src/Priority.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/Properties.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/Properties.hh"
+	"${LOG4CPP_SOURCE_PATH}/src/PropertyConfigurator.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/PropertyConfiguratorImpl.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/PropertyConfiguratorImpl.hh"
+	"${LOG4CPP_SOURCE_PATH}/src/PThreads.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/RemoteSyslogAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/RollingFileAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/SimpleConfigurator.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/SimpleLayout.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/SmtpAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/StringQueueAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/StringUtil.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/StringUtil.hh"
+	"${LOG4CPP_SOURCE_PATH}/src/SyslogAppender.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/TimeStamp.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/TriggeringEventEvaluatorFactory.cpp"
+	"${LOG4CPP_SOURCE_PATH}/src/Win32DebugAppender.cpp"
+)
+
+if (LOG4CPP_BUILD_SHARED_LIBS)
+	add_library(liblog4cpp SHARED
+		${LOG4CPP_HEADERS}
+		${LOG4CPP_SOURCES}
+		${LOG4CPP_SOURCE_PATH}/src/DllMain.cpp
+	)
+	target_compile_definitions(liblog4cpp PUBLIC LOG4CPP_HAS_DLL LOG4CPP_BUILD_DLL)
+else()
+	add_library(liblog4cpp STATIC ${LOG4CPP_HEADERS} ${LOG4CPP_SOURCES})
+endif()
+target_link_libraries(liblog4cpp ws2_32.lib)
+
+# 			RelativePath="..\NTEventLogCategories.mc">
+# 			<FileConfiguration
+# 				Name="Debug|Win32">
+# 				<Tool
+# 					Name="VCCustomBuildTool"
+# 					CommandLine="if not exist $(OutDir) md $(OutDir)
+# mc.exe -h &quot;$(OutDir)&quot; -r &quot;$(OutDir)&quot; &quot;$(ProjectDir)..\$(InputName).mc&quot;
+# rc.exe -r -fo &quot;$(OutDir)\$(InputName).res&quot; &quot;$(OutDir)\$(InputName).rc&quot;
+# link.exe /MACHINE:IX86 -dll -noentry -out:&quot;$(OutDir)\NTEventLogAppender.dll&quot; &quot;$(OutDir)\$(InputName).res&quot;
+# "
+# 					Outputs="$(OutDir)\NTEventLogAppender.dll"/>
+# 			</FileConfiguration>
+# 			<FileConfiguration
+# 				Name="Release|Win32">
+# 				<Tool
+# 					Name="VCCustomBuildTool"
+# 					CommandLine="if not exist $(OutDir) md $(OutDir)
+# mc.exe -h $(OutDir) -r $(OutDir) $(ProjectDir)..\$(InputName).mc
+# RC.exe -r -fo $(OutDir)\$(InputName).res $(OutDir)\$(InputName).rc
+# link.exe /MACHINE:IX86 -dll -noentry -out:$(OutDir)\NTEventLogAppender.dll $(OutDir)\$(InputName).res
+# "
+# 					Outputs="$(OutDir)\NTEventLogAppender.dll"/>
+# 			</FileConfiguration>
+# 			<FileConfiguration
+# 				Name="Debug with Boost|Win32">
+# 				<Tool
+# 					Name="VCCustomBuildTool"
+# 					CommandLine="if not exist $(OutDir) md $(OutDir)
+# mc.exe -h &quot;$(OutDir)&quot; -r &quot;$(OutDir)&quot; &quot;$(ProjectDir)..\$(InputName).mc&quot;
+# rc.exe -r -fo &quot;$(OutDir)\$(InputName).res&quot; &quot;$(OutDir)\$(InputName).rc&quot;
+# link.exe /MACHINE:IX86 -dll -noentry -out:&quot;$(OutDir)\NTEventLogAppender.dll&quot; &quot;$(OutDir)\$(InputName).res&quot;
+# "
+# 					Outputs="$(OutDir)\NTEventLogAppender.dll"/>
+# 			</FileConfiguration>
+# 			<FileConfiguration
+# 				Name="Release with Boost|Win32">
+# 				<Tool
+# 					Name="VCCustomBuildTool"
+# 					CommandLine="if not exist $(OutDir) md $(OutDir)
+# mc.exe -h $(OutDir) -r $(OutDir) $(ProjectDir)..\$(InputName).mc
+# RC.exe -r -fo $(OutDir)\$(InputName).res $(OutDir)\$(InputName).rc
+# link.exe /MACHINE:IX86 -dll -noentry -out:$(OutDir)\NTEventLogAppender.dll $(OutDir)\$(InputName).res
+# "
+# 					Outputs="$(OutDir)\NTEventLogAppender.dll"/>
+# 			</FileConfiguration>

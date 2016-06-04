@@ -1,4 +1,6 @@
 tmp/
 include/
 cppunit/cppunit-*/
+log4cpp/log4cpp*/
 protobuf-v2/protobuf-*/
+tinyxml/tinyxml*/
