@@ -1,3 +1,28 @@
+#=============================================================================
+# Copyright 2016 halex2005 <akharlov@gmail.com>
+#
+# This file is part of [cmake-external-packages project](https://github.com/halex2005/cmake-external-packages).
+# Distributed under MIT License (the "License");
+# see accompanying file LICENSE for details.
+#
+# This software is distributed WITHOUT ANY WARRANTY; without even the
+# implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the License for more information.
+#=============================================================================
+# (To distribute this file outside of cmake-external-packages, substitute the full
+#  License text for the above reference.)
+#=============================================================================
+# Usage:
+#     just include this file by `add_subdirectory(/path/to/this/file)` build_command
+# Result:
+#     will create libcppunit cmake target
+#     use `target_link_libraries(your_exe libcppunit)` to add reference to libcppunit target
+# Customization:
+#     Only lastest version 1.12.1 is supported for now.
+#     CPPUNIT_BUILD_SHARED_LIBS ON/OFF - option for build the cppunit as shared/static libraries
+#     EXTERNAL_PACKAGES_INCLUDE_DIR - directory where cppunit interface includes will be copied.
+#         You should add this directory to include_directories()
+#=============================================================================
 cmake_minimum_required(VERSION 2.8)
 
 if (WIN32)

@@ -1,3 +1,18 @@
+#=============================================================================
+# Copyright 2016 halex2005 <akharlov@gmail.com>
+#
+# This file is part of [cmake-external-packages project](https://github.com/halex2005/cmake-external-packages).
+# Distributed under MIT License (the "License");
+# see accompanying file LICENSE for details.
+#
+# This software is distributed WITHOUT ANY WARRANTY; without even the
+# implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the License for more information.
+#=============================================================================
+# (To distribute this file outside of cmake-external-packages, substitute the full
+#  License text for the above reference.)
+#=============================================================================
+
 SET (LOG4CPP_HEADERS
 	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/threading/BoostThreads.hh"
 	"${LOG4CPP_SOURCE_PATH}/include/log4cpp/threading/DummyThreads.hh"

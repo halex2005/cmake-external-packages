@@ -1,3 +1,30 @@
+#=============================================================================
+# Copyright 2016 halex2005 <akharlov@gmail.com>
+#
+# This file is part of [cmake-external-packages project](https://github.com/halex2005/cmake-external-packages).
+# Distributed under MIT License (the "License");
+# see accompanying file LICENSE for details.
+#
+# This software is distributed WITHOUT ANY WARRANTY; without even the
+# implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the License for more information.
+#=============================================================================
+# (To distribute this file outside of cmake-external-packages, substitute the full
+#  License text for the above reference.)
+#=============================================================================
+# Usage:
+#     just include this file by `add_subdirectory(/path/to/this/file)` build_command
+# Result:
+#     will create libprotobuf, libprotobuf-lite, libprotoc and protoc cmake targets
+#     use `target_link_libraries(your_exe libprotobuf)` to add reference to libprotobuf target
+# Customization:
+#     PROTOBUF_BUILD_SHARED_LIBS ON/OFF - option for build the protobuf as shared/static libraries
+#     PROTOBUF_VERSION_TAG - protobuf tag version from [github releases](https://github.com/google/protobuf/releases?after=v3.0.0-alpha-1)
+#         2.4.1, 2.5.0, 2.6.0 and 2.6.1 versions are supported.
+#         Note: 2.4.1 and 2.5.0 are not supported by Visual Studio 2013 and 2015 due to bug in their STL.
+#     EXTERNAL_PACKAGES_INCLUDE_DIR - directory where protobuf interface includes will be copied.
+#         You should add this directory to include_directories()
+#=============================================================================
 cmake_minimum_required(VERSION 2.8)
 
 if (WIN32)

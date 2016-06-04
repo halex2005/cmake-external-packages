@@ -1,3 +1,29 @@
+#=============================================================================
+# Copyright 2016 halex2005 <akharlov@gmail.com>
+#
+# This file is part of [cmake-external-packages project](https://github.com/halex2005/cmake-external-packages).
+# Distributed under MIT License (the "License");
+# see accompanying file LICENSE for details.
+#
+# This software is distributed WITHOUT ANY WARRANTY; without even the
+# implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the License for more information.
+#=============================================================================
+# (To distribute this file outside of cmake-external-packages, substitute the full
+#  License text for the above reference.)
+#=============================================================================
+# Usage:
+#     just include this file by `add_subdirectory(/path/to/this/file)` build_command
+# Result:
+#     will create liblog4cpp cmake target
+#     use `target_link_libraries(your_exe liblog4cpp)` to add reference to liblog4cpp target
+# Customization:
+#     LOG4CPP_BUILD_SHARED_LIBS ON/OFF - option for build the log4cpp as shared/static libraries
+#     LOG4CPP_VERSION_TAG - log4cpp tag version from [sourceforge files](https://sourceforge.net/projects/log4cpp/files)
+#         only 1.1.1 version is supported for now.
+#     EXTERNAL_PACKAGES_INCLUDE_DIR - directory where log4cpp interface includes will be copied.
+#         You should add this directory to include_directories()
+#=============================================================================
 cmake_minimum_required(VERSION 2.8)
 
 if (WIN32)
