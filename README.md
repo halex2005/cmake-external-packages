@@ -3,9 +3,9 @@
 cmake-external-packages
 =======================
 
-cmake-external-packages can help you to start using on Windows some of libraries which are not supported cmake configuration.
+cmake-external-packages can help you to start using on Windows some of libraries which are not support cmake configuration.
 
-This repository contains just cmake configurations for that packages.
+This repository does not contain any binary files, it contains only cmake plain text configurations for packages.
 
 Why you'll need it?
 -------------------
@@ -35,9 +35,9 @@ Use [git-subtree](http://blogs.atlassian.com/2013/05/alternatives-to-git-submodu
 Declare `EXTERNAL_PACKAGES_INCLUDE_DIR` option in your top-level CMakeLists.txt and add include directories:
 
 ```cmake
-set (EXTERNAL_PACKAGES_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR}/third-party/
+set (EXTERNAL_PACKAGES_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR}/third-party/include
     CACHE STRING "Directory for third-party include files, where include folders will be copied")
-include_directories(${CMAKE_CURRENT_LIST_DIR}/third-party/include)
+include_directories(${EXTERNAL_PACKAGES_INCLUDE_DIR})
 ```
 
 Add packages you want to use with `add_subdiretory`. For example, to use protobuf:
@@ -61,7 +61,7 @@ Which packages are supported?
 - [cppunit](cppunit/CMakeLists.txt) [1.12.1]
 - [log4cpp](log4cpp/CMakeLists.txt) [1.1.1]
 - [protobuf](protobuf-v2/CMakeLists.txt) [2.4.1, 2.5.0, 2.6.0, 2.6.1]
-- [tinyxml](tinyxml/CMakeLists.txt) [2.6.2]
+- [tinyxml](tinyxml/CMakeLists.txt) [any, tested with 2.6.2]
 
 Contributions are welcome!
 
