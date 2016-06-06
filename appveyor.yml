@@ -7,11 +7,11 @@ build_script:
   - mkdir tmp-static-libs
   - cd tmp-static-libs
   - cmake ..
-  - cmake --build .
+  - cmake --build . -- /maxcpucount
   - cd ..
   # build shared libraries
   - mkdir tmp-shared-libs
   - cd tmp-shared-libs
   - cmake .. -DLOG4CPP_BUILD_SHARED_LIBS=ON -DCPPUNIT_BUILD_SHARED_LIBS=ON -DPROTOBUF_BUILD_SHARED_LIBS=ON
-  - cmake --build .
+  - cmake --build . -- /maxcpucount
   - cd ..
