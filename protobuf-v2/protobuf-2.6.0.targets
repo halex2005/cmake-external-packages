@@ -145,7 +145,7 @@ SET (LIBPROTOBUF_LITE_SOURCES
 
 if (PROTOBUF_BUILD_SHARED_LIBS)
     add_library(libprotobuf-lite SHARED ${LIBPROTOBUF_LITE_HEADERS} ${LIBPROTOBUF_LITE_SOURCES})
-    target_compile_definitions(libprotobuf PUBLIC PROTOBUF_USE_DLLS)
+    target_compile_definitions(libprotobuf-lite PUBLIC PROTOBUF_USE_DLLS)
     target_compile_definitions(libprotobuf-lite PRIVATE LIBPROTOBUF_EXPORTS)
 else()
     add_library(libprotobuf-lite STATIC ${LIBPROTOBUF_LITE_HEADERS} ${LIBPROTOBUF_LITE_SOURCES})
@@ -234,7 +234,7 @@ SET (LIBPROTOC_SOURCES
 
 if (PROTOBUF_BUILD_SHARED_LIBS)
     add_library(libprotoc SHARED ${LIBPROTOC_HEADERS} ${LIBPROTOC_SOURCES})
-    target_compile_definitions(libprotobuf PUBLIC PROTOBUF_USE_DLLS)
+    target_compile_definitions(libprotoc PUBLIC PROTOBUF_USE_DLLS)
     target_compile_definitions(libprotoc PRIVATE LIBPROTOC_EXPORTS)
 else()
     add_library(libprotoc STATIC ${LIBPROTOC_HEADERS} ${LIBPROTOC_SOURCES})
