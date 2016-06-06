@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/bjllvvoapoh32vng?svg=true)](https://ci.appveyor.com/project/halex2005/cmake-external-packages)
+
 cmake-external-packages
 =======================
 
